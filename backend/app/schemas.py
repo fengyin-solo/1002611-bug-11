@@ -19,6 +19,8 @@ class ActionResult(BaseModel):
     ok: bool
     message: str
     entry: dict[str, Any] | None = None
+    conflict: bool = False
+    duplicated: bool = False
 
 
 class EntryPayload(BaseModel):
